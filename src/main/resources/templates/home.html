@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="head :: head-page('Home')"></head>
+
+<body class="p-6">
+
+<h1 class="text-3xl font-bold mb-4">Welcome,
+    <span class="text-green-600" th:text=""></span>
+</h1>
+
+<p>this page is just for admin.</p>
+
+<a href="/logout" class="text-red-600 underline">Logout</a>
+
+</body>
+</html>
