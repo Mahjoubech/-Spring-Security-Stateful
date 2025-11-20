@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="head :: head-page('Login')"></head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+<div class="bg-white p-6 rounded-xl shadow-xl w-96">
+
+    <h1 class="text-2xl font-bold text-center mb-4">Login</h1>
+
+    <form method="post" th:action="@{/login}">
+        <div class="mb-4">
+            <label class="block mb-1">Username</label>
+            <input type="text" name="username" class="w-full border p-2 rounded-lg"/>
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-1">Password</label>
+            <input type="password" name="password" class="w-full border p-2 rounded-lg"/>
+        </div>
+
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full">
+            Sign in
+        </button>
+
+    </form>
+</div>
+
+</body>
+</html>
