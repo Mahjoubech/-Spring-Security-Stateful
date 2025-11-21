@@ -6,10 +6,13 @@
 <body class="p-6">
 
 <h1 class="text-3xl font-bold mb-4">Welcome,
-    <span class="text-green-600" th:text=""></span>
+    <span class="text-green-600" th:text="${#authentication.name}"></span>
 </h1>
 
 <p>this page is just for admin.</p>
+<form class="bg-blue-400" action="/updateProfile" method="post">
+    <button>Update Profile</button>
+</form>
 
 <a href="/logout" class="text-red-600 underline">Logout</a>
 
