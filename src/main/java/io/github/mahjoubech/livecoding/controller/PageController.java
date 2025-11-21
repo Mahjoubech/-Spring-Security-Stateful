@@ -25,7 +25,7 @@ public class PageController {
         return "home";
     }
     @GetMapping("/logout")
-    public String logout(Principal principal) {
+    public String logout() {
         return "login";
     }
 
